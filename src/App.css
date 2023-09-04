@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Nunito+Sans:wght@400;600;700;900&display=swap');
+
+*, ::after, ::before
+{
+box-sizing: border-box;
+}
+html,body
+{
+    margin: 0;
+    padding: 0;
+		scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+:root
+{
+    --primary-color:#000;
+    --secondary-color:#484848;
+    --third-color: #1E1E1E;
+    --primary-background: #C5F601;
+    --secondary-background:#000;
+    --privacy-background: #fff;
+    --privacy-color: #000;
+    --border-color: #6B8600;
+    --blue: #3F66D9;
+    --invert: invert(0);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --privacy-background: #000;
+    --privacy-color:#fff; 
+    --invert: invert(1)
+  }
+}
+.dark-mode {
+  --privacy-background: #000;
+    --privacy-color:#fff; 
+    --invert: invert(1)
+}
+@font-face {
+  font-family: shop-regular;
+  src: url(/Users/ahamednasith/Documents/Shops_project/frontend/src/pages/fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+  font-family: shop-bold;
+  src: url(/Users/ahamednasith/Documents/Shops_project/frontend/src/pages/fonts/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+  font-family: shop-light;
+  src: url(/Users/ahamednasith/Documents/Shops_project/frontend/src/pages/fonts/AvenirNextLTPro-It.otf);
+}
+
+body
+{
+    font-family: shop-regular;
+    color: var(--primary-color);
+    background: var(--primary-background);
+}
+.index-body
+{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.privacy-theme, .support-theme
+{
+  background: var(--privacy-background);
+  color: var(--privacy-color);
+}
+.boxed-up {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+@media (min-width: 280px) {
+    .boxed-up {
+      max-width: 279px;
+    }
+}
+@media (min-width: 375px) {
+    .boxed-up {
+      max-width: 340px;
+    }
+}
+@media (min-width: 480px) {
+    .boxed-up {
+      max-width: 440px;
+    }
+}
+  @media (min-width: 576px) {
+    .boxed-up {
+      max-width: 540px;
+    }
+  }
+  @media (min-width: 768px) {
+    .boxed-up {
+      max-width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .boxed-up {
+      max-width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .boxed-up {
+      max-width: 1140px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .boxed-up {
+      max-width: 1320px;
+    }
+  }
+.shop-static
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.logo-align
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.logo-align img
+{
+  width: 85px;
+  margin-right: 20px;
+}
+.logo-align div h1
+{
+  margin: 0;
+  font-size: 69px;
+  font-family: shop-bold;
+  line-height: 1;
+}
+.logo-align div p
+{
+  margin: 0;
+  font-size: 28px;
+  line-height: 1;
+}
+.shop-description
+{
+  font-size: 22px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+.stores
+{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.stores a
+{
+  width: 50%;
+  margin: 10px;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.stores a p
+{
+  font-family: shop-bold;
+  margin: auto;
+  padding-left: 45px;
+  color: var(--secondary-color);
+}
+.stores a img
+{
+ width: 200px;
+}
+.stores a:first-child
+{
+ 
+  flex-basis: 100px;
+}
+.stores a:nth-child(2)
+{
+  flex-basis: 100px;
+}
+.phone-images, .header-index
+{
+  width: 50%;
+}
+.phone-images
+{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ height: 500px;
+}
+.phone-images::before
+{
+  content: url(/Users/ahamednasith/Documents/Shops_project/frontend/src/pages/images/dots.png);
+  position: absolute;
+  right: -800px;
+  z-index: -2;
+  bottom: -150px;
+  
+}
+.phone-images img
+{
+  position: absolute;
+  left: 0;
+ 
+}
+.phone-images img:first-child
+{
+  width: 65%;
+  left: -25px;
+}
+.phone-images img:nth-child(2)
+{
+  z-index: -1;
+  left: 140px;
+  width: 75%;
+}
+.footer-index
+{
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  border-top: solid 1px var(--border-color);
+  width: 100%;
+  padding: 20px 0 10px 0;
+  background: var(--primary-background);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.footer-index div a
+{
+  text-decoration: underline;
+  color: var(--third-color);
+  cursor: pointer;
+}
+.footer-flex-index
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-flex-index a
+{
+  margin: 0 10px;
+}
+/* ========privacy-policy============= */
+.header-privacy
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+.header-privacy div
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.header-privacy p
+{
+  margin: 0;
+}
+.header-privacy p:first-child
+{
+  font-size: 40px;
+  font-family: shop-bold;
+  line-height: 1;
+  padding-top: 20px;
+}
+.header-privacy p:last-child
+{
+  font-size: 18px;
+  font-family: shop-regular;
+}
+.header-privacy img
+{
+  width: 60px;
+  margin-right: 10px;
+  filter: var(--invert);
+}
+.bold
+{
+  font-family: shop-bold;
+}
+.terms
+{
+  font-size: 50px;
+  text-align: center;
+
+}
+.headings
+{
+  font-size: 22px;
+  line-height: 2;
+  margin: 20px 0;
+}
+.no-list
+{
+  list-style: none;
+  padding: 0;
+}
+.no-list li, .some-list li, .list-inside-list li, .privacy-paragraph
+{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.some-list
+{
+  list-style: lower-alpha;
+}
+.list-inside-list
+{
+  list-style: lower-roman;
+}
+.privacy-footer
+{
+  text-align: center;
+  padding: 25px 0;
+  border-top: solid 1px var(--border-color);
+  margin-top: 100px;
+}
+.link-color
+{
+  color: var(--blue);
+}
+/* =================================== */
+/* -----------support-page-------------- */
+.support-theme
+{
+  width: 100vw;
+  height: 100vh;
+}
+.support-class
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.support-class p:first-child
+{
+  font-size: 50px;
+  font-family: shop-bold;
+  text-align: center;
+}
+.support-class p:last-child
+{
+  border: solid 2px var(--border-color);
+  border-style: dotted;
+  text-align: center;
+  font-size: 25px;
+  padding: 35px 0px;
+  line-height: 1.7;
+  font-family: shop-light;
+  margin: 0 0 100px 0;
+}
+.support-footer
+{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: var(--privacy-background);
+  border-top: solid 1px var(--border-color);
+}
+/* -------------------------------------- */
+@media (max-width: 1199px) {
+  .phone-images img:first-child
+  {
+    width: 70%;
+  }
+  .phone-images img:nth-child(2)
+  {
+    width: 80%;
+  }
+  .shop-description 
+  {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .shop-static
+  {
+    flex-direction: column;
+    margin-top: 50px
+  }
+  
+  .index-body
+  {
+    display: block;
+  }
+  .phone-images, .header-index
+  {
+    width: 100%;
+  }
+  .phone-images img:first-child
+  {
+  left: -100px;
+  width: 70%;
+ 
+  }
+  .phone-images img:nth-child(2)
+  {
+    width: 80%;
+    left: 120px;
+  }
+  .phone-images
+  {
+    margin: 300px 0;
+  }
+
+}
+@media (max-width:767px) {
+  .phone-images
+  {
+    margin: 130px 0 150px 0;
+  }
+  .phone-images img:first-child
+  {
+  left: -60px;
+  }
+  .phone-images img:nth-child(2)
+  {
+    left: 100px;
+  }
+}
+@media (max-width:575px) {
+  .phone-images
+  {
+    margin: 70px 0 80px 0;
+  }
+  .phone-images img:first-child
+  {
+  left: -60px;
+  }
+  .phone-images img:nth-child(2)
+  {
+    left: 80px;
+  }
+  .shop-description 
+  {
+    font-size: 16px;
+  }
+.stores a img 
+{
+  width: 150px;
+}
+.stores a p
+{
+  padding-left: 23px;
+}
+}
+@media (max-width:480px) {
+  .shop-description 
+  {
+    font-size: 14px;
+  }
+  .phone-images img:first-child
+  {
+  left: -40px;
+  }
+  .phone-images img:nth-child(2)
+  {
+    left: 70px;
+  }
+  .phone-images
+  {
+    margin: 20px 0 80px 0;
+  }
+  .stores a p
+{
+  padding-left: 0;
+  text-align: center;
+  font-size: 13px;
+}
+.privacy-thing
+{
+  padding-left: 25px;
+} 
+.list-inside-list, .some-list
+{
+  padding: 0;
+}
+.support-class p:last-child
+{
+  font-size: 15px;
+}
+}
+@media (max-width:375px) 
+{
+  .logo-align img
+  {
+    width: 45px;
+  }
+  .logo-align div h1
+  {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+  .logo-align div p
+  {
+    font-size: 15px;
+  }
+  .shop-description
+  {
+    font-size: 12px;
+  }
+  .stores a img 
+  {
+    width: 100px;
+  }
+  .phone-images
+  {
+    margin: 0px 0 80px 0;
+    height: 450px;
+  }
+  .phone-images img:first-child
+  {
+  left: -30px;
+  }
+  .phone-images img:nth-child(2)
+  {
+    left: 50px;
+  }
+  .footer-index
+  {
+    font-size: 10px;
+  }
+  .stores a p
+  {
+    font-size: 10px;
+    text-align: left;
+    padding-left: 15px;
+  }
+}
+
+
+
+

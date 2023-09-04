@@ -1,0 +1,238 @@
+.banner .mainImage {
+    width: 100%;
+}
+
+.banner h3{
+    font-size: 60px;
+    font-weight:700;
+    line-height:68px;
+    text-transform:capitalize;
+    color:#002A48;
+}
+.banner p{
+    padding-top:18px;
+    padding-bottom:34px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height:24px;
+    letter-spacing:1px;
+}
+.banner button{
+    background-color: #003459;
+    border-color: #003459;
+    color:#FDFDFD;
+    border-radius: 80px;
+    display: flex;
+    width: 163px;
+    height:52px;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+@media(max-width:1440px){
+    .banner .mainImage{
+        width:70%;
+    }
+}
+@media(max-width:1199px){
+    .banner h3{
+        font-size:40px;
+        font-weight:700;
+        line-height:68px;            
+        text-transform:capitalize;
+        color:#002A48;
+    }
+    .banner p{
+        padding-top:14px;
+        padding-bottom:30px;
+    }
+}
+@media(max-width:346px){
+    .banner .mainImage{
+        padding-top:10px;
+    }
+}
+@media(max-width:991px){
+    .banner p{
+        padding-top:5px;
+        padding-bottom:25px;
+    }
+    .banner .mainImage{
+        width:90%;
+    }
+    .banner h3{
+        font-size:30px;
+        font-weight:700;
+        line-height:68px;            
+        text-transform:capitalize;
+        color:#002A48;
+    }
+}
+@media (max-width: 767px) {
+    .banner{
+        background-position: right;
+    }
+    .banner .mainImage {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .banner .mainImage {
+        width: 100%;
+    }
+}
+.banner button:hover{
+    background-color: white;
+    border-color: #003459;
+    color: #002A48;
+    border-radius: 80px;
+    display: flex;
+    width: 163px;
+    padding: 14px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.banner .leftcolumn {
+    margin: auto;
+    max-height: 300px;
+}
+.product{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    text-align:center;
+}
+.product h1{
+    color:#000;
+    font-size:30px;
+    font-weight:600;
+    line-height:24px;
+}
+.product video{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.product .row {
+    max-width: 900px;
+    margin: auto;
+}
+@media (max-width: 575px) {
+    .product video {
+        max-width: 250px;
+        margin: auto;
+    }
+}
+
+
+@import url(https://db.onlinewebfonts.com/c/8dc2ab580079c6727f9794de4b0081aa?family=SVN-GilroyLight);
+.footer{
+    display:flex;
+    width:100%;
+    height: 121px;
+    padding:41px 130px;
+    justify-content:center;
+    align-items:center;
+    border-radius:40px 40px 0px 0px;
+    background:linear-gradient(134deg, #FCEED5 6.17%, #FCEED5 75.14%, #FFE7BA 100%);
+    font-family: "SVN-GilroyLight";
+}
+.footer p{
+    color:#667479;
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+}
+.footer p a{
+    text-decoration:none;
+    color:#667479;
+    font-size:14px;
+    font-weight:500;
+    line-height:20px;
+    padding-top:10px;
+}
+.footer .term{
+    padding-left:200px;
+}
+@media(max-width: 493px){
+    .footer{
+        height: 140px;
+    }
+    .footer p{
+        font-size:10px;
+    }
+    .footer p a{
+        font-size:10px;
+    }
+}
+@media(max-width: 403px){
+    .footer{
+        height: 160px;
+    }
+    .footer p{
+        font-size:8px;
+    }
+    .footer p a{
+        font-size:8px;
+    } 
+}
+/* slider */
+.slick-prev {
+    position: absolute;
+    top: 50%;
+    left:10px;
+    outline: none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #003459;
+    color: #ccc;
+    z-index: 99;
+}
+.slick-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    outline: none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    background-color: #003459;
+    color: #ccc;
+    z-index: 99;
+}
+.slick-slider .slick-prev {
+    font-size: 0;
+}
+.slick-slider .slick-prev::before {
+    content: '<';
+    font-size: 20px;
+    color: #fff
+}
+.slick-slider .slick-next {
+    font-size: 0;
+}
+.slick-slider .slick-next::after {
+    content: '>';
+    font-size: 20px;
+    color: #fff
+}
+.product .loadMore {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media(min-width:768px){
+    .banner .noimage{
+        height: 400px;
+    }
+}
